@@ -1,7 +1,7 @@
 package String;
 import java.util.Scanner;
 
-class Main{
+class Quiz03_Split{
 	
 	public String solution(String str) {
 		
@@ -23,9 +23,10 @@ class Main{
 	
 	public static void main(String[] args) {
 		
-		Main T = new Main();
+		Quiz03_Split T = new Quiz03_Split();
 		Scanner kb = new Scanner(System.in);
 		String str = kb.nextLine();
 		System.out.println(T.solution(str));
 	}
+	
 }
