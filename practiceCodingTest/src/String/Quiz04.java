@@ -17,8 +17,20 @@ public class Quiz04 {
 		 *	 answer.add(tmp);
 		}*/
 		
+		//하나하나 뒤집기 
 		for(String x : str) {
 			char[] s = x.toCharArray();
+			int lt = 0;
+			int rt = x.length()-1;
+			while(lt<rt) {
+				char tmp = s[lt];
+				s[lt] = s[rt];
+				s[rt] = tmp;
+				lt++;
+				rt--;
+			}
+			String tmpStr = String.valueOf(s);
+			answer.add(tmpStr);
 			
 		}
 		
